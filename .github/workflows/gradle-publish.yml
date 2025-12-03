@@ -31,7 +31,7 @@ jobs:
       run: |
         if [ ! -f "./gradlew" ]; then
           echo "Gradle wrapper not found. Generating..."
-          gradle wrapper
+          gradle wrapper --gradle-version 8.7
         fi
         chmod +x ./gradlew
 
