@@ -85,11 +85,11 @@ class AudioChat(
     private val onMessageReceived: (String, String) -> Unit
 ) {
     private val sampleRate = 44100
-    private val bitDuration = 0.004 // 4ms
+    private val bitDuration = 0.008 // 8ms (aumentado para menos molestia)
     private val samplesPerBit = (sampleRate * bitDuration).toInt()
     
-    // 8 frecuencias ultrasónicas
-    private val freqs = (0..7).map { 17000 + it * 485 }
+    // 8 frecuencias más ultrasónicas (18.5-21.5 kHz)
+    private val freqs = (0..7).map { 18500 + it * 430 }
     
     private var audioRecord: AudioRecord? = null
     private var audioTrack: AudioTrack? = null

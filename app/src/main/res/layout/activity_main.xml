@@ -66,7 +66,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="🔇 Usando frecuencias ultrasónicas (17-20.4 kHz)"
+        android:text="🔇 Usando frecuencias ultrasónicas (18.5-21.5 kHz)"
         android:textSize="10sp"
         android:gravity="center"
         android:paddingTop="8dp"
